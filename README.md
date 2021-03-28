@@ -4,6 +4,8 @@
 [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) that
 provides its users with operating [zenn.dev](https://zenn.dev).
 
+![](https://user-images.githubusercontent.com/5582459/112757542-1eceef80-9025-11eb-8940-02c0776c11c8.gif)
+
 ## Config
 
 ```lua
