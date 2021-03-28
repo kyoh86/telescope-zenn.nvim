@@ -23,7 +23,7 @@ Listup articles and edit it with an enter key.
 nnoremap <silent> <leader>fza <cmd>Telescope zenn articles<cr>
 ```
 
-You can use `kyoh86/vim-zenn-autocmd` to enable/disable map when enter/leave zenn directory.
+You can use `kyoh86/vim-zenn-autocmd` to enable/disable map when enter into/leave from zenn directory.
 
 ```vim
 call zenn_autocmd#enable()
