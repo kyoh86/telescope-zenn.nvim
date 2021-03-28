@@ -4,16 +4,10 @@
 [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) that
 provides its users with operating [zenn.dev](https://zenn.dev).
 
-## Installation
+## Config
 
 ```lua
-use{
-  'nvim-telescope/telescope-zenn.nvim',
-  config = function()
-    require('telescope').load_extension('zenn')
-    require('telescope.zenn.keymap').articles('<leader>a') -- set keymap `<leader>a` for `:Telescope zenn articles`
-  end,
-}
+require('telescope').load_extension('zenn')
 ```
 
 ## Usage
@@ -22,6 +16,23 @@ use{
 
 `:Telescope zenn articles`
 Listup articles and edit it with an enter key.
+
+## Call it with keymap
+
+```vim
+nnoremap <silent> <leader>fza <cmd>Telescope zenn articles<cr>
+```
+
+You can use `kyoh86/vim-zenn-autocmd` to enable/disable map when enter/leave zenn directory.
+
+```vim
+call zenn_autocmd#enable()
+augroup my-zenn-autocmd
+  autocmd!
+  autocmd User ZennEnter nnoremap <silent> <leader>fza <cmd>Telescope zenn articles<cr>
+  autocmd User ZennLeave silent! unnmap! <leader>fza
+augroup end
+```
 
 # LICENSE
 
