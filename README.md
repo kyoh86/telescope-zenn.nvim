@@ -11,6 +11,7 @@ use{
   'nvim-telescope/telescope-zenn.nvim',
   config = function()
     require('telescope').load_extension('zenn')
+    require('telescope.zenn.keymap').articles('<leader>a') -- set keymap `<leader>a` for `:Telescope zenn articles`
   end,
 }
 ```
