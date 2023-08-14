@@ -1,5 +1,7 @@
 # telescope-zenn.nvim
 
+I'm no longer using telescope. So active development has decelerated on the repository, and I'm predominantly addressing bug fixes.
+
 `telescope-zenn` is an extension for
 [telescope.nvim](https://github.com/nvim-telescope/telescope.nvim) that
 provides its users with operating [zenn.dev](https://zenn.dev).
